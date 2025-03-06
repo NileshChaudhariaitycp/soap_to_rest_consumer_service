@@ -55,4 +55,50 @@ body{
 						   border-radius: 5px;
 						   cursor: pointer;
 						 }
+						 /* FOR NAVIGATION */
+						 /* Basic reset for the list */
+						 nav ol {
+						   padding: 0;
+						   margin: 0;
+						   list-style: none;
+						   display: flex;
+						   font-family: Arial, sans-serif;
+						 }
+
+						 nav ol li {
+						   font-size: 16px;
+						   color: #007bff; /* Blue color for the links */
+						   padding: 5px 10px;
+						 }
+
+						 nav ol li a {
+						   text-decoration: none;
+						   color: inherit; /* Inherit color from parent */
+						 }
+
+						 nav ol li a:hover {
+						   color: #0056b3; /* Darker blue on hover */
+						   text-decoration: underline;
+						 }
+
+						 nav ol li + li::before {
+						   content: " ";
+						   margin: 0 8px;
+						   color: #6c757d; /* Gray separator */
+						 }
+
+						 /* Optional: Add background color to the breadcrumb bar */
+						 nav {
+						   background-color: #f8f9fa;
+						   padding: 10px;
+						   border-radius: 5px; /* Rounded corners */
+						   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+						 }
+
+						 nav a {
+						   font-weight: bold; /* Make the links bold */
+						 }
+
+					
+
 

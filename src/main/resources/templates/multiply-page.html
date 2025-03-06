@@ -2,6 +2,16 @@
 <html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}"
 	xmlns:th="http://www.thymeleaf.org">
 <body>
+	<nav>
+		<ol>
+			<li><a th:href="@{/dashboard}">Dashboard</a></li>
+			<li><a href="/add">Addition Service</a></li>
+			<li><a href="/sub">Substraction Service</a></li>
+			<li><a href="/mul">Multiplication Service</a></li>
+			<li><a href="/div">Divide Service</a></li>
+	
+		</ol>
+	</nav>
 <div class="container">
 	<h2>Consuming SOAP Multiply Service In REST</h2>
 	<div th:if="${status}==200" class="alert alert-success scs" role="alert">
