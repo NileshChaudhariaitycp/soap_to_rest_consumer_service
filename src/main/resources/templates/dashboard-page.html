@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<div class="container">
+	<h2 style="text-align: center;">Consuming SOAP Services In REST</h2>
+	
+	<form action="/add">
+	
+		<button class="add-service-btn" type="submit">Call Addition Service</button>
+	
+	</form><br>
+	
+	<form action="/sub">
+	
+		<button class="add-service-btn" type="submit">Call Substraction Service</button>
+	
+	</form><br>
+	
+	<form action="/mul">
+	
+		<button class="add-service-btn" type="submit">Call Multiply Service</button>
+	
+	</form><br>
+	
+	<form action="/div">
+		
+			<button class="add-service-btn" type="submit">Call Divide Service</button>
+		
+	</form>
+	</div>
+	
+		<th:block layout:fragment="scripts">
+			<link rel="stylesheet" type="text/css" th:href="@{/common/css/calculator_view.css}" />
+		</th:block>
+</body>
+</html>

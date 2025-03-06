@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<div class="container">
+	<h2 style="text-align: center;">Consuming SOAP Substract Service In REST</h2>
+	
+	<div th:if="${status}==200" class="alert alert-success scs" role="alert">
+		<span>Sub of <span th:text="${firstNumber}"></span> and <span th:text="${secondNumber}"></span> is <span
+				th:text="${result}"></span></span>
+	</div>
+	
+	<div th:if="${status}==200" class="alert alert-success scs" role="alert">
+		<span>Response : <span class="response-text" th:text="${response}"></span></span>
+	</div> <br>
+	
+	<form action="/substraction">
+		<label  for="firstNumber">First Number:</label>
+				  <input  type="number" id="firstNumber" name="firstNumber"><br><br>
+				  
+				  <label  for="secondNumber">Second Number:</label>
+				  <input  type="number" id="secondNumber" name="secondNumber"><br><br>
+				  
+				  <input  type="submit" value="Calculate">
+	</form>
+	</div>
+	<th:block layout:fragment="scripts">
+		<link rel="stylesheet" type="text/css" th:href="@{/common/css/calculator_view.css}" />
+	</th:block>
+	
+	
+</body>
+</html>
