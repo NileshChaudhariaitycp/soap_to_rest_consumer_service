@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.soap.service.CalculateService;
 
-@Controller
+@Controller  
 public class Calculate {
-	
+	     
 	@Autowired
 	private CalculateService calculateService;
 
