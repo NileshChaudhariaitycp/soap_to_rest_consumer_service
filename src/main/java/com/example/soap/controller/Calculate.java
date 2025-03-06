@@ -32,24 +32,6 @@ public class Calculate {
 		return "add-page";
 	}
 	
-	@GetMapping("/sub")
-	public String subPage()
-	{
-		return "sub-page";
-	}
-	
-	@GetMapping("/mul")
-	public String mulPage()
-	{
-		return "multiply-page";
-	}
-	
-	@GetMapping("/div")
-	public String divPage()
-	{
-		return "divide-page";
-	}
-	
 	@GetMapping("/addition")
 	public String addition(@RequestParam(name = "firstNumber") int firstNumber, @RequestParam(name="secondNumber") int secondNumber,Model model) throws Exception
 	{
@@ -65,6 +47,12 @@ public class Calculate {
 		model.addAttribute("response", httpStatus);
 		model.addAttribute("result", result);
 		return "add-page";
+	}
+	
+	@GetMapping("/sub")
+	public String subPage()
+	{
+		return "sub-page";
 	}
 	
 	@GetMapping("/substraction")
@@ -83,6 +71,12 @@ public class Calculate {
 		return "sub-page";
 	}
 	
+	@GetMapping("/mul")
+	public String mulPage()
+	{
+		return "multiply-page";
+	}
+	
 	@GetMapping("/multiply")
 	public String multiply(@RequestParam(name="firstNumber") int firstNumber, @RequestParam(name="secondNumber") int secondNumber,Model model) throws Exception
 	{
@@ -97,6 +91,12 @@ public class Calculate {
 		model.addAttribute("response", httpStatus);
 		model.addAttribute("result", result);
 		return "multiply-page";
+	}
+	
+	@GetMapping("/div")
+	public String divPage()
+	{
+		return "divide-page";
 	}
 	
 	@GetMapping("/divide")
